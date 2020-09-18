@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FDED87C-91DB-449D-B27C-44A0BC5CCCB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinformControls</RootNamespace>
+    <AssemblyName>WinformControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AxControls\AxAnimatedButton.cs" />
+    <Compile Include="AxControls\AxBorderCombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxBorderCombo.Designer.cs">
+      <DependentUpon>AxBorderCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AxControls\AxBorderDatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxBorderDatePicker.Designer.cs">
+      <DependentUpon>AxBorderDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AxControls\AxCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxCaptionButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxCaptionLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxControlPalette.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxFileListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxGrid\AxGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxGrid\AxHeaderCell.cs" />
+    <Compile Include="AxControls\AxGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxTestControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxToggleBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\BorderlessDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\ButtonAnimation.cs" />
+    <Compile Include="AxControls\ControlTemplate\AxCaptionControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\ControlTemplate\AxControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\Designer\IntControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AxControls\Designer\IntEditor.cs" />
+    <Compile Include="AxControls\DropDownComboList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\NonFocusableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxBorderTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxBorderTextBox.Designer.cs">
+      <DependentUpon>AxBorderTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AxControls\AxButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxControls\AxNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\StateColors.cs" />
+    <Compile Include="Common\Types.cs" />
+    <Compile Include="Helpers\AlignmentHelper.cs" />
+    <Compile Include="Helpers\ColorHelper.cs" />
+    <Compile Include="Helpers\ExtendedForms.cs" />
+    <Compile Include="Helpers\WindowsNative.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AxControls\AxBorderCombo.resx">
+      <DependentUpon>AxBorderCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AxControls\AxBorderDatePicker.resx">
+      <DependentUpon>AxBorderDatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AxControls\AxGroupBox.resx">
+      <DependentUpon>AxGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AxControls\NonFocusableForm.resx">
+      <DependentUpon>NonFocusableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AxControls\AxBorderTextBox.resx">
+      <DependentUpon>AxBorderTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Roboto-Medium.ttf" />
+    <EmbeddedResource Include="Resources\Roboto-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\baseline_date_range_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
