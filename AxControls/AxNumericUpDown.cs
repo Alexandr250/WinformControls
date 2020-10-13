@@ -429,18 +429,26 @@ namespace WinformControls.AxControls {
             if ( _isSelected ) {
                 e.Graphics.FillPath( HoverStyle.BackBrush, ExtendedForms.RoundedRect( controlRect, BorderRadius ) );
                 e.Graphics.DrawPath( HoverStyle.BorderPen, ExtendedForms.RoundedRect( controlRect, BorderRadius ) );
+                _textBox1.BackColor = HoverStyle.BackBrush.Color;
             }
             else {
                 e.Graphics.FillPath( NormalStyle.BackBrush, ExtendedForms.RoundedRect( controlRect, BorderRadius ) );
                 e.Graphics.DrawPath( NormalStyle.BorderPen, ExtendedForms.RoundedRect( controlRect, BorderRadius ) );
+                _textBox1.BackColor = NormalStyle.BackBrush.Color;
             }
-
         }
 
         protected override void OnFontChanged( EventArgs e ) {
             _textBox1.Font = Font;
             base.OnFontChanged( e );
             OnResize( null );
+        }
+
+        protected override void OnMouseWheel( MouseEventArgs e ) {
+            if ( e.Delta > 0 )
+                Value++;
+            else
+                Value--;
         }
 
         private void AxNumericUpDown_MouseEnter( object sender, EventArgs e ) {

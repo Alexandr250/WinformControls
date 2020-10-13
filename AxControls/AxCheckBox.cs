@@ -58,15 +58,16 @@ namespace WinformControls {
 
             
             Rectangle toggleRect = new Rectangle( ClientRectangle.X, ClientRectangle.Y, ClientRectangle.Height - 1, ClientRectangle.Height - 1 );
+
             int toggleWidth = toggleRect.Width;
 
-            if ( Appearance == System.Windows.Forms.Appearance.Normal ) {
-                int rectInflate = ( toggleRect.Height - Font.Height );
+            if ( Appearance == Appearance.Normal ) {
+                int rectInflate = 3; //( toggleRect.Height - Font.Height );
                 if ( Font.Height < 15 )
-                    rectInflate = 2;
+                    rectInflate = 3;
 
                 toggleRect.Offset( -rectInflate, 0 );
-                toggleRect.Inflate( rectInflate * -1, rectInflate * -1 );
+                toggleRect.Inflate( -rectInflate * 1, -rectInflate * 1 );
 
                 if ( _selected ) {
                     g.FillPath( new SolidBrush( ToggleHoverBackColor ), ExtendedForms.RoundedRect( toggleRect, BorderRadius ) );
